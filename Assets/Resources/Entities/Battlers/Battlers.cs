@@ -1,15 +1,17 @@
 using UnityEngine;
 
-public class Fish : MonoBehaviour
+public class Battlers : MonoBehaviour
 {
+    public bool isEnemy;
+
     [SerializeField] BattlersStat stat;
-    [SerializeField] bool isEnemy;
 
     Rigidbody2D rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameObject.layer = LayerMask.NameToLayer(isEnemy ? "Enemy" : "Player");
     }
 
     private void FixedUpdate()

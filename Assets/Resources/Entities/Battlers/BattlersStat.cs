@@ -6,6 +6,7 @@ public class BattlersStat : ScriptableObject
     [SerializeField] float health;
     [SerializeField] float attack;
     [SerializeField] float moveSpeed;
+    [SerializeField] int price;
 
     public float GetMoveSpeed()
     {

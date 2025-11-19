@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "LevelInput",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "61c2b1fe-8ca0-4060-9247-76a9919d1777",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "cdd6686d-b4a5-4b70-922d-34280c3be54e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Point",
+                    "type": "PassThrough",
+                    "id": "06f98d52-d9d5-4a64-ac71-a3dbb836ea05",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4d6dbab6-bdc8-4cb7-8617-3689f8809007",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d5a89c65-b2ce-4b8f-8675-c7ee10649d48",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
