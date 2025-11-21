@@ -2,8 +2,34 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
-    [SerializeField] GameplayCanvas canvas;
+    [SerializeField] GameplayCanvas gameplayCanvas;
+    [SerializeField] float moneyDelay = 1f;
+
     [SerializeField] Tower playerTower;
+
+    int money = 0;
+    float nextMoneyTime;
+
+    private void Start()
+    {
+        nextMoneyTime = Time.time + moneyDelay;
+    }
+
+    private void Update()
+    {
+        GainMoney();
+        gameplayCanvas.CheckFishButtonsAvaiability(money);
+    }
+
+    private void GainMoney()
+    {
+        if (Time.time > nextMoneyTime)
+        {
+            money += 1;
+            gameplayCanvas.UpdateMoneyText(money);
+            nextMoneyTime = Time.time + moneyDelay;
+        }
+    }
 
     public void spawnFish(int fishIndex)
     {
@@ -12,6 +38,14 @@ public class Game : MonoBehaviour
             playerTower.transform.position.y + Random.Range(-1.5f, 1.5f),
             playerTower.transform.position.z
         );
-        Instantiate(GameManager.instance.playerFishes[fishIndex], spawnPos, Quaternion.identity, playerTower.transform);
+        Battlers fishInstance = Instantiate(
+           GameManager.instance.battlersBase,
+           spawnPos,
+           Quaternion.identity,
+           playerTower.transform).GetComponent<Battlers>();
+        fishInstance.stat = GameManager.instance.fishStats[fishIndex];
+
+        money -= fishInstance.stat.GetPrice();
+        gameplayCanvas.UpdateMoneyText(money);
     }
 }

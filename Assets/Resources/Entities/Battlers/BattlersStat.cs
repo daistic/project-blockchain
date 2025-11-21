@@ -13,7 +13,7 @@ public class BattlersStat : ScriptableObject
         return moveSpeed;
     }
 
-    public float GetPrice()
+    public int GetPrice()
     {
         return price;
     }

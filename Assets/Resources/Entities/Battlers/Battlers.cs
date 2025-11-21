@@ -3,8 +3,7 @@ using UnityEngine;
 public class Battlers : MonoBehaviour
 {
     public bool isEnemy;
-
-    [SerializeField] BattlersStat stat;
+    public BattlersStat stat;
 
     Rigidbody2D rb;
 

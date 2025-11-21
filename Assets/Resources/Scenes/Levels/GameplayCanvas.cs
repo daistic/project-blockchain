@@ -5,60 +5,41 @@ using TMPro;
 public class GameplayCanvas : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI moneyText;
-    [SerializeField] float moneyDelay = 1f;
+    [SerializeField] Button[] fishButtons = new Button[5];
 
-    [SerializeField] GameObject[] fishButtons = new GameObject[5];
-
-    int money = 0;
-    float nextMoneyTime;
     BattlersStat[] playerFishes;
 
     private void Start()
     {
-        nextMoneyTime = Time.time + moneyDelay;
-
-        playerFishes = GameManager.instance.playerFishes;
+        playerFishes = GameManager.instance.fishStats;
         for (int i = 0; i < fishButtons.Length; i++)
         {
             if (playerFishes[i] == null)
             {
-                fishButtons[i].SetActive(false);
+                fishButtons[i].gameObject.SetActive(false);
             }
         }
     }
 
-    private void Update()
+    public void UpdateMoneyText(int money)
     {
-        UpdateMoneyText();
-        CheckFishButtonsAvaiability();
-    }
-
-    private void UpdateMoneyText()
-    {
-        if (Time.time > nextMoneyTime)
-        {
-            money += 1;
-            nextMoneyTime = Time.time + moneyDelay;
-        }
-
         string text = money.ToString() + "$";
         moneyText.text = text;
     }
     
-    private void CheckFishButtonsAvaiability()
+    public void CheckFishButtonsAvaiability(int money)
     {
         for (int i = 0; i < fishButtons.Length; i++)
         {
-            if (fishButtons[i].activeSelf)
+            if (fishButtons[i].gameObject.activeSelf)
             {
-                Button button = fishButtons[i].GetComponent<Button>();
                 if (playerFishes[i].GetPrice() > money)
-                { 
-                    button.interactable = false;
+                {
+                    fishButtons[i].interactable = false;
                 }
                 else
                 {
-                    button.interactable = true;
+                    fishButtons[i].interactable = true;
                 }
             }
         }
