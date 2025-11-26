@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1958377072822138233}
   - component: {fileID: 1866430971989419772}
   - component: {fileID: 8971499304916592385}
+  - component: {fileID: 7702626049312802966}
   m_Layer: 0
   m_Name: BaseBattlers
   m_TagString: Untagged
@@ -181,3 +182,25 @@ MonoBehaviour:
   stat: {fileID: 11400000, guid: 46dc6e44bacc90647bb2698baaafbce4, type: 2}
   isEnemy: 0
   price: 10
+--- !u!95 &7702626049312802966
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800698953366857036}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
