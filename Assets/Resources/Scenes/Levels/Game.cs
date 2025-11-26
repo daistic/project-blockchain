@@ -35,7 +35,7 @@ public class Game : MonoBehaviour
     {
         Vector3 spawnPos = new Vector3(
             playerTower.transform.position.x,
-            playerTower.transform.position.y + Random.Range(-1.5f, 1.5f),
+            playerTower.transform.position.y - 1.5f + Random.Range(-0.7f, 0.5f),
             playerTower.transform.position.z
         );
         Battlers fishInstance = Instantiate(
