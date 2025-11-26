@@ -178,5 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa7bca587e5ca943bbbc35e00d8c347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fish
-  isEnemy: 0
   stat: {fileID: 11400000, guid: 46dc6e44bacc90647bb2698baaafbce4, type: 2}
+  isEnemy: 0
+  price: 10

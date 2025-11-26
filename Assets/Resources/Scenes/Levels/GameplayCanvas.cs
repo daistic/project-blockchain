@@ -5,13 +5,13 @@ using TMPro;
 public class GameplayCanvas : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI moneyText;
-    [SerializeField] Button[] fishButtons = new Button[5];
+    [SerializeField] Button[] fishButtons = new Button[4];
 
-    BattlersStat[] playerFishes;
+    Battlers[] playerFishes;
 
     private void Start()
     {
-        playerFishes = GameManager.instance.fishStats;
+        playerFishes = GameManager.instance.playerFishes;
         for (int i = 0; i < fishButtons.Length; i++)
         {
             if (playerFishes[i] == null)
@@ -33,7 +33,7 @@ public class GameplayCanvas : MonoBehaviour
         {
             if (fishButtons[i].gameObject.activeSelf)
             {
-                if (playerFishes[i].GetPrice() > money)
+                if (playerFishes[i].price > money)
                 {
                     fishButtons[i].interactable = false;
                 }

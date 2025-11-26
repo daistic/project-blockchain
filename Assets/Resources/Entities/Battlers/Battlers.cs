@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class Battlers : MonoBehaviour
 {
-    public bool isEnemy;
     public BattlersStat stat;
+    public bool isEnemy;
+    public int price;
 
     Rigidbody2D rb;
 

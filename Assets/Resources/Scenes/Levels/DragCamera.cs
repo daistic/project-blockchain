@@ -46,6 +46,7 @@ public class DragCamera : MonoBehaviour
 
         Vector2 mousePos = levelInput.Game.Point.ReadValue<Vector2>();
         Vector3 pos = Camera.main.ScreenToViewportPoint(mousePos - (Vector2)dragOrigin);
+        pos *= -1;
 
         Vector3 move = new Vector3(pos.x * dragSpeed, 0, pos.y * dragSpeed);
         transform.Translate(move, Space.World);

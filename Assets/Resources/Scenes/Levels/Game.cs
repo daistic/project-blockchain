@@ -39,13 +39,13 @@ public class Game : MonoBehaviour
             playerTower.transform.position.z
         );
         Battlers fishInstance = Instantiate(
-           GameManager.instance.battlersBase,
-           spawnPos,
-           Quaternion.identity,
-           playerTower.transform).GetComponent<Battlers>();
-        fishInstance.stat = GameManager.instance.fishStats[fishIndex];
+            GameManager.instance.playerFishes[fishIndex],
+            spawnPos,
+            Quaternion.identity,
+            playerTower.transform
+        );
 
-        money -= fishInstance.stat.GetPrice();
+        money -= fishInstance.price;
         gameplayCanvas.UpdateMoneyText(money);
     }
 }

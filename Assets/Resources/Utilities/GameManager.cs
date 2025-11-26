@@ -14,6 +14,5 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    public GameObject battlersBase;
-    public BattlersStat[] fishStats = new BattlersStat[5];
+    public Battlers[] playerFishes = new Battlers[5];
 }
