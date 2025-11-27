@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class Battlers : MonoBehaviour
+public class Battlers : MonoBehaviour, IDamageable
 {
     public BattlersStat stat;
     public bool isEnemy;
     public int price;
 
     [SerializeField] Transform attackPoint;
+    [SerializeField] LayerMask enemyLayer;
 
     private Rigidbody2D rb;
     private float currentHealth;
@@ -22,7 +23,7 @@ public class Battlers : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, stat.GetAttackRange(), 0);
+        Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, stat.GetAttackRange(), 0, enemyLayer);
 
         if (hitEnemies.Length > 0)
         {
@@ -32,11 +33,11 @@ public class Battlers : MonoBehaviour
             {
                 foreach (Collider2D enemyCollider in hitEnemies)
                 {
-                    Battlers battler = enemyCollider.GetComponent<Battlers>();
+                    IDamageable damageable = enemyCollider.GetComponent<IDamageable>();
 
-                    if (battler != null)
+                    if (damageable != null)
                     {
-                        battler.TakeDamage(stat.GetDamage());
+                        damageable.TakeDamage(stat.GetDamage());
                     }
                 }
                 nextAttackTime = Time.time + stat.GetAttackDelay();

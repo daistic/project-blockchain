@@ -23,7 +23,7 @@ public class GameplayCanvas : MonoBehaviour
 
     public void UpdateMoneyText(int money)
     {
-        string text = money.ToString() + "$";
+        string text = money.ToString();
         moneyText.text = text;
     }
     
