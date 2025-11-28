@@ -23,9 +23,9 @@ public class GameplayCanvas : MonoBehaviour
             {
                 if (currentPlayerFish.buttonImage != null)
                 {
-                    fishButtons[i].changeButtonImage(currentPlayerFish.buttonImage);
+                    fishButtons[i].ChangeButtonImage(currentPlayerFish.buttonImage);
                 }
-                fishButtons[i].changePriceText(currentPlayerFish.price.ToString());
+                fishButtons[i].ChangePriceText(currentPlayerFish.price.ToString());
             }
         }
     }

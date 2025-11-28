@@ -8,17 +8,17 @@ public class FishButton : MonoBehaviour
     [SerializeField] Image buttonImage;
     [SerializeField] TextMeshProUGUI priceText;
 
-    public void changeButtonInteractibility(bool interactibility)
+    public void ChangeButtonInteractibility(bool interactibility)
     {
         button.interactable = interactibility;
     }
 
-    public void changeButtonImage(Sprite newImage)
+    public void ChangeButtonImage(Sprite newImage)
     {
         buttonImage.sprite = newImage;
     }
 
-    public void changePriceText(string newPriceText)
+    public void ChangePriceText(string newPriceText)
     {
         priceText.text = newPriceText;
     }
