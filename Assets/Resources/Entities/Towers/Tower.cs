@@ -15,6 +15,7 @@ public class Tower : MonoBehaviour, IDamageable
     private void Start()
     {
         currentHealth = maxHealth;
+        UpdateHealthText();
     }
 
     public void TakeDamage(float damage)

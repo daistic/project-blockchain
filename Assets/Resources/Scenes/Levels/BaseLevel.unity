@@ -2238,10 +2238,6 @@ PrefabInstance:
       value: PlayerTower
       objectReference: {fileID: 0}
     - target: {fileID: 6075004126444549531, guid: e711162a9b4b5224da452f23dc3a64a9, type: 3}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6075004126444549531, guid: e711162a9b4b5224da452f23dc3a64a9, type: 3}
       propertyPath: gameOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 25476547}
@@ -2441,10 +2437,6 @@ PrefabInstance:
     - target: {fileID: 309000571280048613, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 800757936796228519, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
-      propertyPath: maxHealth
-      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 800757936796228519, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
       propertyPath: gameOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
