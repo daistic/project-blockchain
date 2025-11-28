@@ -74,6 +74,34 @@ PrefabInstance:
       propertyPath: isEnemy
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1279992413070645161, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
+      propertyPath: maxHealth
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279992413070645161, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
+      propertyPath: gameOverEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279992413070645161, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
+      propertyPath: gameOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279992413070645161, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
+      propertyPath: gameOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279992413070645161, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
+      propertyPath: gameOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGameOverEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279992413070645161, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
+      propertyPath: gameOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Game, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279992413070645161, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
+      propertyPath: gameOverEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2204060295941279211, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.7

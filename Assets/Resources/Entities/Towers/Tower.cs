@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Tower : MonoBehaviour, IDamageable
 {
@@ -7,6 +8,7 @@ public class Tower : MonoBehaviour, IDamageable
     public bool isEnemy;
 
     [SerializeField] TextMeshPro healthText;
+    [SerializeField] UnityEvent gameOverEvent;
 
     private float currentHealth;
 
@@ -22,7 +24,7 @@ public class Tower : MonoBehaviour, IDamageable
 
         if (currentHealth < 0)
         {
-            print("win game");
+            gameOverEvent.Invoke();
         }
     }
 

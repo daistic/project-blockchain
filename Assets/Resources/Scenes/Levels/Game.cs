@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
     [SerializeField] GameplayCanvas gameplayCanvas;
+    [SerializeField] GameOverCanvas gameoverCanvas;
     [SerializeField] float moneyDelay = 1f;
 
     [SerializeField] Tower playerTower;
@@ -31,7 +33,7 @@ public class Game : MonoBehaviour
         }
     }
 
-    public void spawnFish(int fishIndex)
+    public void SpawnFish(int fishIndex)
     {
         Vector3 spawnPos = new Vector3(
             playerTower.transform.position.x,
@@ -47,5 +49,18 @@ public class Game : MonoBehaviour
 
         money -= fishInstance.price;
         gameplayCanvas.UpdateMoneyText(money);
+    }
+
+    public void OnGameOverEvent(bool playerWin)
+    {
+        gameplayCanvas.gameObject.SetActive(false);
+
+        gameoverCanvas.gameObject.SetActive(true);
+        gameoverCanvas.DisplayGameOverText(playerWin);
+    }
+
+    public void OnReplayButtonClicked()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
