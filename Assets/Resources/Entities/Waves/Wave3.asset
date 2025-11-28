@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1df3a0883d8f8f642b66577527c437d7, type: 3}
-  m_Name: TestWave
+  m_Name: Wave3
   m_EditorClassIdentifier: Assembly-CSharp::EnemyWave
   enemies:
   - {fileID: 6981743905978795421, guid: 67e6d3c1e5870f249a3c786a76675876, type: 3}
-  - {fileID: 6981743905978795421, guid: 67e6d3c1e5870f249a3c786a76675876, type: 3}
-  - {fileID: 6981743905978795421, guid: 67e6d3c1e5870f249a3c786a76675876, type: 3}
-  minSpawnTime: 1
-  maxSpawnTime: 2
+  - {fileID: 45291825186638466, guid: c27eeb438377d22438c029eeb3409021, type: 3}
+  minSpawnTime: 2
+  maxSpawnTime: 2.5

@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game
   gameplayCanvas: {fileID: 1928683957}
-  moneyDelay: 0.5
+  moneyDelay: 0.45
   playerTower: {fileID: 168464459}
 --- !u!4 &25476548
 Transform:
@@ -587,6 +587,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 25476547}
+    - target: {fileID: 2095281756283076025, guid: b2287cdda7b48d14f8d80ec46c31f06b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7173423140834082917, guid: b2287cdda7b48d14f8d80ec46c31f06b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1052,6 +1056,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 25476547}
+    - target: {fileID: 2095281756283076025, guid: b2287cdda7b48d14f8d80ec46c31f06b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7173423140834082917, guid: b2287cdda7b48d14f8d80ec46c31f06b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1292,6 +1300,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 25476547}
+    - target: {fileID: 2095281756283076025, guid: b2287cdda7b48d14f8d80ec46c31f06b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7173423140834082917, guid: b2287cdda7b48d14f8d80ec46c31f06b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1644,7 +1656,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 309000571280048613, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.29
+      value: -18.7
       objectReference: {fileID: 0}
     - target: {fileID: 309000571280048613, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
       propertyPath: m_LocalPosition.y

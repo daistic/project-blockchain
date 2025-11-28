@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyWaveHandler
   waves:
   - {fileID: 11400000, guid: 5523e810c2c33e4419d2e892638a6c6d, type: 2}
+  - {fileID: 11400000, guid: 1de567ef9d0a19340b47f7898631ee58, type: 2}
+  - {fileID: 11400000, guid: e8f5ec8c4c8493e40b6c350cdc92e725, type: 2}
   minNextWaveTime: 2
   maxNextWaveTime: 3.5
 --- !u!1001 &1936459091745770510
@@ -74,7 +76,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2204060295941279211, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.29
+      value: -18.7
       objectReference: {fileID: 0}
     - target: {fileID: 2204060295941279211, guid: b7b150776bf65e7489ca5594e625b8b2, type: 3}
       propertyPath: m_LocalPosition.y
