@@ -1,19 +1,33 @@
+using TMPro;
 using UnityEngine;
 
 public class Tower : MonoBehaviour, IDamageable
 {
-    public float health = 100f;
+    public float maxHealth = 100f;
     public bool isEnemy;
+
+    [SerializeField] TextMeshPro healthText;
+
+    private float currentHealth;
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+    }
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
+        currentHealth -= damage;
+        UpdateHealthText();
 
-        if (health < 0)
+        if (currentHealth < 0)
         {
             print("win game");
         }
+    }
 
-        print(health);
+    private void UpdateHealthText()
+    {
+        healthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
     }
 }

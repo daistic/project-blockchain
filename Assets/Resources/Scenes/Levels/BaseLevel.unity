@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac3934dffd9517a4085a757bd0a24ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragCamera
-  dragSpeed: 0.1
+  dragSpeed: 6.5
   leftBorder: -20
   rightBorder: 7
 --- !u!1 &619394800
@@ -1545,7 +1545,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6788073631471456320, guid: e711162a9b4b5224da452f23dc3a64a9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: e711162a9b4b5224da452f23dc3a64a9, type: 3}
 --- !u!1001 &6996591221827113936
 PrefabInstance:
@@ -1696,6 +1699,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6796712255381182609, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8393365110588765919, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
       propertyPath: m_Name
       value: EnemyTower
@@ -1703,7 +1710,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100776880321298044, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c4e0bdab4eefdc84bb8935bff2b43b72, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
