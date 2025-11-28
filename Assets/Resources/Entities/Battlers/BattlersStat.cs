@@ -3,11 +3,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "BattlersStat", menuName = "Scriptable Objects/BattlersStat")]
 public class BattlersStat : ScriptableObject
 {
-    [SerializeField] float health;
-    [SerializeField] float damage;
-    [SerializeField] Vector2 attackRange;
-    [SerializeField] float attackDelay;
-    [SerializeField] float moveSpeed;
+    [SerializeField] float health = 5;
+    [SerializeField] float damage = 5;
+    [SerializeField] Vector2 attackRange = new Vector2(1f, 1f);
+    [SerializeField] float attackDelay = 1;
+    [SerializeField] float moveSpeed = 2.5f;
 
     public float GetHealth()
     {
