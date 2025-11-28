@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36600de22ee51d344a49dc80e503db4a, type: 3}
   m_Name: Octopus
   m_EditorClassIdentifier: Assembly-CSharp::BattlersStat
-  health: 7
-  damage: 3
+  health: 6
+  damage: 2.5
   attackRange: {x: 1, y: 1.5}
   attackDelay: 1
   moveSpeed: 2.5
