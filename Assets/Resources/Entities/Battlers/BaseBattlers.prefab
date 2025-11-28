@@ -184,6 +184,10 @@ MonoBehaviour:
   isEnemy: 0
   price: 10
   attackPoint: {fileID: 9119491383768557918}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  buttonImage: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!95 &7702626049312802966
 Animator:
   serializedVersion: 7

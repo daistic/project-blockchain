@@ -5,6 +5,7 @@ public class Battlers : MonoBehaviour, IDamageable
     public BattlersStat stat;
     public bool isEnemy;
     public int price;
+    public Sprite buttonImage;
 
     [SerializeField] Transform attackPoint;
     [SerializeField] LayerMask enemyLayer;

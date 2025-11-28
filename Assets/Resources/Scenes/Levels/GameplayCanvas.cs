@@ -1,11 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class GameplayCanvas : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI moneyText;
-    [SerializeField] Button[] fishButtons = new Button[4];
+    [SerializeField] FishButton[] fishButtons = new FishButton[4];
 
     Battlers[] playerFishes;
 
@@ -14,9 +13,19 @@ public class GameplayCanvas : MonoBehaviour
         playerFishes = GameManager.instance.playerFishes;
         for (int i = 0; i < fishButtons.Length; i++)
         {
-            if (playerFishes[i] == null)
+            Battlers currentPlayerFish = (playerFishes[i]? playerFishes[i] : null); 
+
+            if (currentPlayerFish == null)
             {
                 fishButtons[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                if (currentPlayerFish.buttonImage != null)
+                {
+                    fishButtons[i].changeButtonImage(currentPlayerFish.buttonImage);
+                }
+                fishButtons[i].changePriceText(currentPlayerFish.price.ToString());
             }
         }
     }
@@ -35,11 +44,11 @@ public class GameplayCanvas : MonoBehaviour
             {
                 if (playerFishes[i].price > money)
                 {
-                    fishButtons[i].interactable = false;
+                    fishButtons[i].changeButtonInteractibility(false);
                 }
                 else
                 {
-                    fishButtons[i].interactable = true;
+                    fishButtons[i].changeButtonInteractibility(true);
                 }
             }
         }
