@@ -1660,6 +1660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerTower
       objectReference: {fileID: 0}
+    - target: {fileID: 3110056669868906723, guid: e711162a9b4b5224da452f23dc3a64a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6075070601446785902, guid: e711162a9b4b5224da452f23dc3a64a9, type: 3}
       propertyPath: m_SortingOrder
       value: 1
