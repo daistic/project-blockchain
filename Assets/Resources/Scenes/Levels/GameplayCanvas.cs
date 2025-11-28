@@ -44,11 +44,11 @@ public class GameplayCanvas : MonoBehaviour
             {
                 if (playerFishes[i].price > money)
                 {
-                    fishButtons[i].changeButtonInteractibility(false);
+                    fishButtons[i].ChangeButtonInteractibility(false);
                 }
                 else
                 {
-                    fishButtons[i].changeButtonInteractibility(true);
+                    fishButtons[i].ChangeButtonInteractibility(true);
                 }
             }
         }
