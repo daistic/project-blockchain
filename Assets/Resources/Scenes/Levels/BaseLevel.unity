@@ -411,6 +411,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragCamera
   dragSpeed: 0.1
+  leftBorder: -20
+  rightBorder: 7
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
